@@ -28,6 +28,7 @@ namespace ReadExcel.Commands
             OpenFileDialog openfileDialog = FileIO.OpenFile();
             if(openfileDialog.ShowDialog() == false) 
                 return Result.Cancelled;
+
             string fileName = openfileDialog.FileName;
             string sheetName = "ElementIds";
             List<int> elementIdValues = new List<int>();

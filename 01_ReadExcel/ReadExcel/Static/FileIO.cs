@@ -19,6 +19,7 @@ namespace ReadExcel.Static
         {
             //Out 변수 초기화
             elemIdList = null;
+
             if(File.Exists(filename) == false)
             {
                 return;
@@ -39,19 +40,22 @@ namespace ReadExcel.Static
                 //Linq를 활용하여 Sheets를 Excel.Worksheet 열거형으로 변환 후, 시트이름이 sheetName인 시트 고르기
                 ws = wb.Sheets.Cast<Excel.Worksheet>().FirstOrDefault(sheet => sheet.Name == sheetName);
 
+                Excel.Range range = ws.UsedRange;
+
                 //시트가 반환되지 않은경우(ex, 해당이름의 시트가 없을때)
                 if (ws == null) return;
 
                 //1열인 셀 중 1~7행의 셀을 읽어서 값을 elemIdValues에 넣어주기
+                //주의사항 : Excel 인터페이스상의 행, 열 값은 0이아닌 1부터 시작함.
                 for(int i = 1; i < 8; i++)
                 {
-                    var col = ws.Columns[0];
-                    var row = col.Row[i];
-                    elemIdValues.Add(Int32.Parse(row.Value.ToString()));
+                    double cellValue = (double)(range.Cells[i, 1] as Excel.Range).Value2;
+                    elemIdValues.Add(Int32.Parse(cellValue.ToString()));
                 }
+
                 elemIdList = elemIdValues;
 
-                //엑셀 프로세스 해제 (해주지않으면 백그라운드에서 계속 엑셀이 돌아가서 여러가지 문제 발생시킬 수 있음)
+                //엑셀 닫기
                 wb.Close(false, Type.Missing, Type.Missing);
                 excelApp.Quit();
             }
@@ -61,13 +65,13 @@ namespace ReadExcel.Static
             }
             finally
             {
-                //메모리 해제
+                //프로세스 해제
                 ReleaseObject(wb);
                 ReleaseObject(ws);
             }
         }
 
-        //Excel 메모리 해제
+        //Excel 프로세스 해제
         private static void ReleaseObject(object obj)
         {
             try
@@ -92,6 +96,7 @@ namespace ReadExcel.Static
         //파일 열기 대화상자
         public static OpenFileDialog OpenFile()
         {
+            //여러 설정값들
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.CheckFileExists = true;
             openFileDialog.Multiselect = false;
