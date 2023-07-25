@@ -107,7 +107,7 @@ namespace ReadExcel.Static
 
             openFileDialog.InitialDirectory = filepath;
             openFileDialog.DefaultExt = ".xlsx";
-            openFileDialog.Filter = "XML (*.xlsx) | *.xlsx";
+            openFileDialog.Filter = "Excel | *.xlsx";
 
             return openFileDialog;
         }
