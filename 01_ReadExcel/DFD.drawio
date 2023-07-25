@@ -1,0 +1,86 @@
+<mxfile host="Electron" modified="2023-07-25T23:28:15.284Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="BF6yBsEVvkohgVmOyl3W" version="21.2.8" type="device">
+  <diagram name="Page-1" id="5d7acffa-a066-3a61-03fe-96351882024d">
+    <mxGraphModel dx="1182" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-4" value="엑셀 파일" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#FFFFCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-5" value="사용자" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#99FFFF;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-6" value="엑셀 파일&lt;br style=&quot;font-size: 10px;&quot;&gt;불러오기" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#B3FF66;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-7" value="FileIO" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#FFFFCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-5" target="gDSiTNjPnZTbpuiKIzcf-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="230" as="sourcePoint" />
+            <mxPoint x="250" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-6" target="gDSiTNjPnZTbpuiKIzcf-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="200" as="sourcePoint" />
+            <mxPoint x="390" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-13" value="엑셀 파일 불러오기&lt;br&gt;함수 실행" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gDSiTNjPnZTbpuiKIzcf-9">
+          <mxGeometry x="-0.3667" y="1" relative="1" as="geometry">
+            <mxPoint x="9" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-7" target="gDSiTNjPnZTbpuiKIzcf-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="430" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-15" value="변수에 엑셀 파일 저장" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="290" y="299.9971428571429" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-4" target="gDSiTNjPnZTbpuiKIzcf-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-19" value="ElementId&lt;br&gt;전달" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gDSiTNjPnZTbpuiKIzcf-16">
+          <mxGeometry x="-0.1476" y="1" relative="1" as="geometry">
+            <mxPoint x="29" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-20" value="ElementId로&lt;br&gt;객체 선택하는&lt;br style=&quot;font-size: 10px;&quot;&gt;함수 호출" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#B3FF66;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-23" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-20" target="gDSiTNjPnZTbpuiKIzcf-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="450" as="sourcePoint" />
+            <mxPoint x="180" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-24" value="선택된 객체" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#FFFFCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gDSiTNjPnZTbpuiKIzcf-24" target="gDSiTNjPnZTbpuiKIzcf-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="240" as="sourcePoint" />
+            <mxPoint x="150" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-26" value="객체 선택" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="180" y="479.9957142857143" as="geometry" />
+        </mxCell>
+        <mxCell id="gDSiTNjPnZTbpuiKIzcf-27" value="선택한&lt;br&gt;객체 표시" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="159.9957142857143" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -58,27 +58,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Command.cs" />
     <Compile Include="Commands\GetExcelData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DocablePaneUI\MyDockablePane.xaml.cs">
-      <DependentUpon>MyDockablePane.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Static\FileIO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="RevitAddin.addin" />
   </ItemGroup>
-  <ItemGroup>
-    <Page Include="DocablePaneUI\MyDockablePane.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RibbonUI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if exist "$(AppData)\Autodesk\REVIT\Addins\2024" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2024"
