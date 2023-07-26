@@ -1,11 +1,6 @@
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\bin\Debug\ReadExcel.dll
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\bin\Debug\ReadExcel.pdb
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel.csproj.AssemblyReference.cache
-F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\DocablePaneUI\MyDockablePane.g.cs
-F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel_MarkupCompile.cache
-F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel_MarkupCompile.lref
-F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\DocablePaneUI\MyDockablePane.baml
-F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel.g.resources
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel.csproj.CoreCompileInputs.cache
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel.dll
 F:\Jakkelab_Laptop\02_Dev\11_Examples\01_RVT\01_ReadExcel\ReadExcel\obj\Debug\ReadExcel.pdb

@@ -60,9 +60,7 @@ namespace ReadExcel.Commands
                     selectedElementIds.Add(elementId);
                 }
             }
-
             return selectedElementIds;
         }
     }
-
 }
