@@ -10,5 +10,5 @@ And attached some diagrams or explanation document(like markdown file and so on)
 <H2>Contents</H2>
 <H3>1. Read excel sheet in Revit</H3>
 👉https://github.com/JakkeLab/RevitAPI_Examples/tree/main/01_ReadExcel
-<H3>2. Getting Rvit element data without activating document on Revit runtime.</H3>
+<H3>2. Getting Revit element data without activating document on Revit runtime.</H3>
 👉https://github.com/JakkeLab/RevitAPI_Examples/tree/main/02_GetCountofElements
