@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Application MakeTransient</Name>
+		<Assembly>MakeTransient.dll</Assembly>
+		<FullClassName>MakeTransient.App</FullClassName>
+		<ClientId>c25d8766-dab3-4e1a-af0f-49d58c9002f2</ClientId>
+		<VendorId>JakkeLab</VendorId>
+		<VendorDescription>Author</VendorDescription>
+	</AddIn>
+</RevitAddIns>
