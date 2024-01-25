@@ -45,6 +45,8 @@ namespace TraceDifference
 
             var colCntCurrent = colsCurrent.GetElementCount();
             var colCntTarget = colsTarget.GetElementCount();
+            string result = colCntTarget - colCntCurrent > 0 ? "+" + (colCntTarget - colCntCurrent).ToString() : (colCntTarget - colCntCurrent).ToString();
+            TaskDialog.Show("Count Column Element",$"Comparer Counts : {result}");
 
             return Result.Succeeded;
         }
