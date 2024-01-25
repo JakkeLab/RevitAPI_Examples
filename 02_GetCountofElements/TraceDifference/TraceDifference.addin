@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>TraceDifference</Name>
+		<Assembly>TraceDifference.dll</Assembly>
+		<FullClassName>TraceDifference.App</FullClassName>
+		<ClientId>646c41b2-e15e-4af3-af36-3bce77c89a93</ClientId>
+		<VendorId>JakkeLab</VendorId>
+		<VendorDescription>JakkeLab</VendorDescription>
+	</AddIn>
+</RevitAddIns>
