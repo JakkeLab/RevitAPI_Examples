@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.33801.198
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-1_AdWindows-ComboBox", "04-1_AdWindows-ComboBox\04-1_AdWindows-ComboBox.csproj", "{EE8C42B4-ACAE-40A6-9CC5-F25F5A42CC8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE8C42B4-ACAE-40A6-9CC5-F25F5A42CC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8C42B4-ACAE-40A6-9CC5-F25F5A42CC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8C42B4-ACAE-40A6-9CC5-F25F5A42CC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8C42B4-ACAE-40A6-9CC5-F25F5A42CC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7499138C-CBE2-4464-9E43-BDC0016D215A}
+	EndGlobalSection
+EndGlobal

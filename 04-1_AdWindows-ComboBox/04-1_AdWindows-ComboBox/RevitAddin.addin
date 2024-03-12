@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Application _04_1_AdWindows_ComboBox</Name>
+		<Assembly>_04_1_AdWindows_ComboBox.dll</Assembly>
+		<FullClassName>_04_1_AdWindows_ComboBox.App</FullClassName>
+		<ClientId>6428ea99-df46-485f-aeac-b10b91c95987</ClientId>
+		<VendorId>Author</VendorId>
+		<VendorDescription>Author</VendorDescription>
+	</AddIn>
+</RevitAddIns>
