@@ -14,3 +14,5 @@ And attached some diagrams or explanation document(like markdown file and so on)
 👉https://github.com/JakkeLab/RevitAPI_Examples/tree/main/02_GetCountofElements
 <H3>3. Making Transient (Temporary) Object, adding control on it.</H3>
 👉https://github.com/JakkeLab/RevitAPI_Examples/tree/main/03_MakeTransient
+<H3>4. Set databinding on ComboBox of RibbonPanel.</H3>
+👉https://github.com/JakkeLab/RevitAPI_Examples/blob/main/04_RibbonComboBinding/README.MD
