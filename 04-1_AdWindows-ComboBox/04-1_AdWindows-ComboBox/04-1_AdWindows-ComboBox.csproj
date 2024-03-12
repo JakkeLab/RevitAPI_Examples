@@ -31,14 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2024\AdWindows.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="RevitAPI">
-      <HintPath>..\Revit 2024 DLL\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\Revit 2024 DLL\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -54,24 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="Model\MyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DocablePaneUI\MyDockablePane.xaml.cs">
-      <DependentUpon>MyDockablePane.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Static\StaticValues.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RevitAddin.addin" />
   </ItemGroup>
-  <ItemGroup>
-    <Page Include="DocablePaneUI\MyDockablePane.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RibbonUI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if exist "$(AppData)\Autodesk\REVIT\Addins\2024" copy "$(ProjectDir)*.addin" "$(AppData)\Autodesk\REVIT\Addins\2024"

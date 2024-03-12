@@ -2,7 +2,6 @@
 using Autodesk.Revit.UI;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.Attributes;
-using _04_1_AdWindows_ComboBox.TabUI;
 using Autodesk.Revit.UI.Events;
 using Autodesk.Revit.DB.Events;
 using System.Reflection;
@@ -10,6 +9,7 @@ using Autodesk.Windows;
 using RibbonPanel = Autodesk.Revit.UI.RibbonPanel;
 using System.Windows.Data;
 using Binding = System.Windows.Data.Binding;
+using _04_1_AdWindows_ComboBox.Static;
 
 namespace _04_1_AdWindows_ComboBox
 {
@@ -45,7 +45,7 @@ namespace _04_1_AdWindows_ComboBox
                 //2-2. 바인딩 설정부분
                 Binding chainBinding = new Binding
                 {
-                    Source = SHVMObjects.Chains,
+                    Source = StaticValues.Models,
                     Mode = BindingMode.OneWay
                 };
                 cmbCurrentChain.ItemsSourceBinding = chainBinding;
