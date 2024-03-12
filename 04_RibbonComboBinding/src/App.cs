@@ -70,6 +70,7 @@ namespace _04_RibbonComboBinding
                 {
                     foreach (var panel in tab.Panels)
                     {
+                        //Actually You can find the target by value of Id. Find the value by debugging.
                         var panelId = panel.Id;
                         if (panel.Cookie == "Panel=CustomCtrl_%RibbonItemBinding%BindingTest_BindingTest_BindingTest")
                         {
@@ -79,7 +80,10 @@ namespace _04_RibbonComboBinding
                                 var name = item.Name;
                                 if (id == "CustomCtrl_%CustomCtrl_%RibbonItemBinding%BindingTest%cmbDataModelSelector")
                                 {
+                                    //1. Cast as RibbonCombo (AdWindow);
                                     var cmbBox = item as RibbonCombo;
+
+                                    //2. Create binding instance.
                                     Binding chainBinding = new Binding
                                     {
                                         Source = StaticValues.Models,
@@ -87,12 +91,16 @@ namespace _04_RibbonComboBinding
                                     };
                                     cmbBox.ItemsSourceBinding = chainBinding;
 
+                                    //3. Set Path of binding instance.
                                     Binding chainNameBinding = new Binding
                                     {
                                         Path = new System.Windows.PropertyPath("Name")
                                     };
 
+                                    //4. Set binding of combobox as the instance.
                                     cmbBox.ItemTemplateTextBinding = chainNameBinding;
+
+                                    //5. Add a eventhandler (Optional, but may be useful)
                                     cmbBox.CurrentChanged += cmbChains_CurrentChanged;
                                 }
                             }
