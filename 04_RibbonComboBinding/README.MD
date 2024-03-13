@@ -62,7 +62,7 @@ Actually, AdWindows.dll is the library for calling API on AutoCAD Environment, n
   }
 ```
 
-If you are understanding the data binding(mostly used at MVVM Project of WPF), you would be able to apply full CRUD on ComboBox.<br/>
+If you understand the data binding(mostly used at MVVM Project of WPF), you would be able to apply full CRUD on ComboBox.<br/>
 
 
 
