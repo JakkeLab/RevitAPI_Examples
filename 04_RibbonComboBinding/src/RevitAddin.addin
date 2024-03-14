@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Application _04_RibbonComboBinding</Name>
+		<Assembly>_04_RibbonComboBinding.dll</Assembly>
+		<FullClassName>_04_RibbonComboBinding.App</FullClassName>
+		<ClientId>e814a3e8-0639-4d6d-a04e-2d2cd3f3f345</ClientId>
+		<VendorId>JakkeLab</VendorId>
+		<VendorDescription>JakkeLab</VendorDescription>
+	</AddIn>
+</RevitAddIns>
