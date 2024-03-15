@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("_04_1_AdWindows_ComboBox")]
+[assembly: AssemblyTitle("FamilySearchQuery")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("_04_1_AdWindows_ComboBox")]
+[assembly: AssemblyProduct("FamilySearchQuery")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ee8c42b4-acae-40a6-9cc5-f25f5a42cc8a")]
+[assembly: Guid("2b83c5e9-4e7a-44aa-9440-7f470503a27b")]
 
 // Version information for an assembly consists of the following four values:
 //
