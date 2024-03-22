@@ -16,20 +16,17 @@ namespace FamilySearchQuery
         {
             try
             {
-                string tabName = "My Add-in";
+                string tabName = "FamilySearch";
                 application.CreateRibbonTab(tabName);
                 Assembly assembly = Assembly.GetExecutingAssembly();
                 string assemblyPath = assembly.Location;
 
                 //Ribbon Panel
-                RibbonPanel ribbonPanel = application.CreateRibbonPanel(tabName, "My Panel");
-                PushButtonData buttonData = new PushButtonData("MyButton", "MyButton", assemblyPath, "FamilySearchQuery.Command");
+                RibbonPanel ribbonPanel = application.CreateRibbonPanel(tabName, "Families");
+                PushButtonData btnDataFamilySearch = new PushButtonData("btnDataFamilySearch", "Search\nFamily", assemblyPath, "FamilySearchQuery.Command");
 
-                // Add the Push Button to the Ribbon Panel
-                PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
-                PushButtonData showButtonData = new PushButtonData("Show Window", "Show", assemblyPath, "FamilySearchQuery.Show");
+                PushButton btnFamilySearch = ribbonPanel.AddItem(btnDataFamilySearch) as PushButton;
 
-                // return result
                 return Result.Succeeded;
             }
             catch (Exception ex)

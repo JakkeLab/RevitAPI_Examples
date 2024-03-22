@@ -34,7 +34,7 @@ namespace MakeTransient
                 PushButtonData buttonData = new PushButtonData("btnTemporaryButton", "Test", assemblyPath, "MakeTransient.Command");
 
                 // Add the Push Button to the Ribbon Panel
-                PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
+                PushButton pushButton = ribbosnPanel.AddItem(buttonData) as PushButton;
 
                 #region Register Click Handler
                 var clickHandler = new ImgClickHandler();

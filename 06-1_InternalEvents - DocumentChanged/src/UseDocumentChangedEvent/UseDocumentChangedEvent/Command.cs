@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FamilySearchQuery
+namespace UseDocumentChangedEvent
 {
     [Transaction(TransactionMode.Manual)]
     public class Command : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
-            //Revit 내장 변수
-            var uiapp = commandData.Application;
-            var app = uiapp.Application;
-            var uidoc = uiapp.ActiveUIDocument;
-            var doc = uidoc.Document;
-
-
-
+            TaskDialog.Show("MyButton", "You clicked MyButton!");
             return Result.Succeeded;
         }
     }
