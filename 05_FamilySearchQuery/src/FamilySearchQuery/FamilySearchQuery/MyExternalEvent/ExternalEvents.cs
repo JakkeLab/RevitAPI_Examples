@@ -13,6 +13,9 @@ namespace FamilySearchQuery.MyExternalEvent
     
     public class QueryEvent : IExternalEventHandler
     {
+        /// <summary>
+        /// For allocate your viewmodel.
+        /// </summary>
         public SearchViewModel CurrentViewModel;
         public void Execute(UIApplication app)
         {

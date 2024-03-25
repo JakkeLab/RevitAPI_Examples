@@ -11,6 +11,7 @@ namespace FamilySearchQuery.Static
     {
         /// <summary>
         /// 문서 내에 존재하는 패밀리를 수집합니다.
+        /// By Category
         /// </summary>
         /// <param name="doc"></param>
         /// <param name="category"></param>
@@ -36,6 +37,7 @@ namespace FamilySearchQuery.Static
 
         /// <summary>
         /// 문서 내의 패밀리 중 지정한 이름의 매개변수가 있는 패밀리만 추출
+        /// By Category, Specific Parameter name
         /// </summary>
         /// <param name="doc"></param>
         /// <param name="category"></param>
@@ -63,6 +65,7 @@ namespace FamilySearchQuery.Static
 
         /// <summary>
         /// 문서 내의 패밀리 중 지정한 이름의 매개변수가 있고, 지정한 값을 가진 패밀리만 추출
+        /// By Category, Parameter name, Parameter value
         /// </summary>
         /// <param name="doc"></param>
         /// <param name="category"></param>
@@ -93,6 +96,7 @@ namespace FamilySearchQuery.Static
 
     /// <summary>
     /// 패밀리 정보를 간단하게 저장해두기 위한 클래스
+    /// Class for save family information in simple way.
     /// </summary>
     public class MyFamilyInfo
     {
