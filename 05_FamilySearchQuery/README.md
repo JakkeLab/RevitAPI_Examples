@@ -21,3 +21,4 @@ Actually, you can link your viewmodel on your ExternalEvent instance.
 ![image](https://github.com/JakkeLab/RevitAPI_Examples/assets/73068969/ddc8a19a-5bba-4549-958e-187b58c13ccb)
 
 Explain of code is written on .cs scripts.
+Just set debug as running external application and debug on Revit.
