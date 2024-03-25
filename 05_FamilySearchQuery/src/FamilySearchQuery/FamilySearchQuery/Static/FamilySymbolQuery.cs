@@ -7,29 +7,8 @@ using System.Threading.Tasks;
 
 namespace FamilySearchQuery.Static
 {
-    public class FamilySymbolQuery
+    public class FamilyQuery
     {
-        /// <summary>
-        /// 문서 내의 특정 카테고리에 해당하는 Element를 찾아서 IEnumerable로 반환합니다.
-        /// </summary>
-        /// <param name="doc"></param>
-        /// <param name="category"></param>
-        /// <returns></returns>
-        public static IEnumerable<ElementInfo> CollectElements(Document doc, BuiltInCategory category)
-        {
-            var res = new List<ElementInfo>();
-
-            //Element 검색
-            var elems = new FilteredElementCollector(doc)   //FilteredElementCollect 선언하여 검색 대상을 문서 전체의 Element로 지정함
-                .OfCategory(category)                       //FilteredElementCollect의 검색범위를 category에 해당하는 것으로 줄임
-                .ToElements()                               //Element들로 바꿈
-                .ToList();                                  //이 부분은 본인 필요에 맞게 바꿔 사용
-
-            //결과 저장 후 반환
-            elems.ForEach(elem => res.Add(new ElementInfo(elem.Id, elem.Name)));
-            return res;
-        }
-
         /// <summary>
         /// 문서 내에 존재하는 패밀리를 수집합니다.
         /// </summary>
@@ -110,21 +89,6 @@ namespace FamilySearchQuery.Static
             symbols.ForEach(sym => res.Add(new MyFamilyInfo(sym.Id, sym.FamilyName, sym.Name)));
             return res;
         }
-    }
-
-    /// <summary>
-    /// 엘리먼트 정보를 간단하게 저장해두기 위한 클래스
-    /// </summary>
-    public class ElementInfo
-    {
-        public ElementInfo(ElementId revitElementId, string name)
-        {
-            RevitElementId = revitElementId;
-            Name = name;
-        }
-
-        public ElementId RevitElementId { get; set; }
-        public string Name { get; set; }
     }
 
     /// <summary>

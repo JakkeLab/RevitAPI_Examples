@@ -4,7 +4,7 @@
 		<Name>Application FamilySearchQuery</Name>
 		<Assembly>FamilySearchQuery.dll</Assembly>
 		<FullClassName>FamilySearchQuery.App</FullClassName>
-		<ClientId>6428ea99-df46-485f-aeac-b10b91c95987</ClientId>
+		<ClientId>36c4f6fd-8c04-4f22-9813-0def654276b0</ClientId>
 		<VendorId>Author</VendorId>
 		<VendorDescription>Author</VendorDescription>
 	</AddIn>
