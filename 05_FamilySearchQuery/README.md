@@ -12,6 +12,7 @@
 
 Sometimes, we need to create functions to search items.
 In this example, you will create Family search window by Category, Parameter, Parameter value.<br/>
+Architecture based on MVVM for using WPF in comfortable way.<br/>
 [![Video Label](http://img.youtube.com/vi/FEKfmP9JXF4/0.jpg)](https://youtu.be/FEKfmP9JXF4?si=7KqFyfNuPAalvYCr)<br/>
 Click to watch on Youtube.
 
